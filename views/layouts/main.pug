@@ -3,9 +3,10 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Wetube
+        <script src="https://kit.fontawesome.com/c01f686e44.js" crossorigin="anonymous"></script>
+        title  | #{siteName}
     body
+        include ../partials/header
         main
             block content
-        footer
-            span &copy; Wetube
+        include ../partials/footer
