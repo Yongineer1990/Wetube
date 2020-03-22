@@ -69,7 +69,7 @@ export const postEditVideo = async (req, res) => {
     } catch(error) {
 
     }
-};
+}; 
 
 export const deleteVideo = async (req, res) => {
     const {
