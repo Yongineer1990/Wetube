@@ -23,6 +23,7 @@ export const postJoin = async (req, res, next) => {
       next();
     } catch (error) {
       console.log(error);
+      res.redirect(routes.home);
     }
   }
 };
@@ -35,8 +36,18 @@ export const postLogin = passport.authenticate("local", {
   successRedirect: routes.home
 });
 
+export const githubLogin = passport.authenticate("github");
+
+export const githubloginCallback = (accessToken, refreshToken, profile, cb) => {
+  console.log(accessToken, refreshToken, profile, cb);
+};
+
+export const postGithubLogin = (req, res) => {
+  res.send(routes.home);
+};
+
 export const logout = (req, res) => {
-  // To Do: Process Louout
+  req.logout();
   res.redirect(routes.home);
 };
 
