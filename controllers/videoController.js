@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import routes from "../routes";
 import Video from "../models/Video";
 

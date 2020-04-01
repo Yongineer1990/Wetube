@@ -15,5 +15,8 @@ module.exports = {
   rules: {
     "prettier/prettier": 0,
     "no-console": "off"
+  },
+  env: {
+    browser: true
   }
 };
