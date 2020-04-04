@@ -27,6 +27,11 @@ const GITHUB_CALLBACK = "/auth/github/callback";
 const FACEBOOK = "/auth/facebook";
 const FACEBOOK_CALLBACK = "/auth/facebook/callback";
 
+// API
+
+const API = "/api";
+const REGISTER_VIEW = "/:id/view";
+
 const routes = {
   home: HOME,
   join: JOIN,
@@ -34,7 +39,7 @@ const routes = {
   logout: LOGOUT,
   search: SEARCH,
   user: USER,
-  userDetail: id => {
+  userDetail: (id) => {
     if (id) {
       return `/users/${id}`;
     } else {
@@ -45,21 +50,21 @@ const routes = {
   changePassword: CHANGE_PASSWORD,
   videos: VIDEOS,
   upload: UPLOAD,
-  videoDetail: id => {
+  videoDetail: (id) => {
     if (id) {
       return `/videos/${id}`;
     } else {
       return VIDEOS_DETAIL;
     }
   },
-  editVideo: id => {
+  editVideo: (id) => {
     if (id) {
       return `/videos/${id}/edit`;
     } else {
       return EDIT_VIDEO;
     }
   },
-  deleteVideo: id => {
+  deleteVideo: (id) => {
     if (id) {
       return `/videos/${id}/delete`;
     } else {
@@ -70,7 +75,9 @@ const routes = {
   githubCallback: GITHUB_CALLBACK,
   facebook: FACEBOOK,
   facebookCallback: FACEBOOK_CALLBACK,
-  me: ME
+  me: ME,
+  api: API,
+  registerView: REGISTER_VIEW,
 };
 
 export default routes;
