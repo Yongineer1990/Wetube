@@ -2,15 +2,7 @@
 
 Cloning Youtube with Vanilla and NodeJS
 
-## Pages:
+## Todos:
 
-- [x] Home
-- [x] Join
-- [x] Login
-- [x] Search
-- [x] User Detail
-- [x] Edit Profile
-- [x] Change Password
-- [x] Upload
-- [x] Video Detail
-- [x] Edit Video
+[] 내 댓글에 삭제 버튼 추가하기
+[] 내 댓글이라면 삭제 기능 추가하기
